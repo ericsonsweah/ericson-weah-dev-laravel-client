@@ -1,0 +1,9 @@
+1. redis
+2. email
+3. laravel scout
+4. laravel cashier
+5. laravel horizon
+6. laravel octane
+7. laravel socialite
+
+
