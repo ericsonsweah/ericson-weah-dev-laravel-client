@@ -13,6 +13,7 @@
     "fruitcake/laravel-cors": "^2.0",
     "guzzlehttp/guzzle": "^7.0.1",
     "http-interop/http-factory-guzzle": "^1.2",
+    "laravel/cashier": "^13.8",
     "laravel/framework": "^8.40",
     "laravel/jetstream": "^2.7",
     "laravel/octane": "^1.2",
