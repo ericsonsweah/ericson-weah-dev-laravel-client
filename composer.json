@@ -15,6 +15,7 @@
     "http-interop/http-factory-guzzle": "^1.2",
     "laravel/cashier": "^13.8",
     "laravel/framework": "^8.40",
+    "laravel/horizon": "^5.9",
     "laravel/jetstream": "^2.7",
     "laravel/octane": "^1.2",
     "laravel/sanctum": "^2.15",
