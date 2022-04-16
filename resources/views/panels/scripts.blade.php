@@ -14,12 +14,19 @@
 
 @if($configData['blankPage'] === false)
 <script src="{{ asset(mix('js/scripts/customizer.js')) }}"></script>
+
 @endif
 <!-- END: Theme JS-->
 <!-- BEGIN: Page JS-->
 @yield('page-script')
 <!-- END: Page JS-->
 
+@include('assets.scripts.toastr')
+@include('assets.scripts.axios')
+@include('assets.scripts.socket-io')
+{{-- @include('assets.scripts.jquery') --}}
+@include('assets.scripts.helper')
 @stack('modals')
 @livewireScripts
+
 <script defer src="{{ asset(mix('vendors/js/alpinejs/alpine.js')) }}"></script>

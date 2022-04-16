@@ -40,6 +40,7 @@
   <link rel="stylesheet" href="{{ asset(mix('css/style.css')) }}" />
 @endif
 
+@include('assets.styles.toastr')
 @livewireStyles
 
 @livewireStyles

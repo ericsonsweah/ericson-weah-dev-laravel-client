@@ -300,4 +300,9 @@
 @section('page-script')
 <!-- Page js files -->
 <script src="{{ asset(mix('js/scripts/pages/app-chat.js')) }}"></script>
+@include('assets.scripts.socket-io')
+@include('assets.scripts.toastr')
+<script>
+    // const socket = io.connect('http://localhost:8080',{secure: true})
+</script>
 @endsection
