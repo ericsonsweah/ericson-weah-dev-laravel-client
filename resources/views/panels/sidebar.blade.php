@@ -5,7 +5,8 @@ $configData = Helper::applClasses();
   <div class="navbar-header">
     <ul class="nav navbar-nav flex-row">
       <li class="nav-item me-auto">
-        <a class="navbar-brand" href="{{url('/')}}">
+        @include('logos.success')
+        {{-- <a class="navbar-brand" href="{{url('/')}}">
           <span class="brand-logo">
             <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
               <defs>
@@ -32,7 +33,7 @@ $configData = Helper::applClasses();
             </svg>
           </span>
           <h2 class="brand-text">Vuexy</h2>
-        </a>
+        </a> --}}
       </li>
       <li class="nav-item nav-toggle">
         <a class="nav-link modern-nav-toggle pe-0" data-toggle="collapse">
