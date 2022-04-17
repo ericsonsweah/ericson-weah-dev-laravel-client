@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class AppsController extends Controller
 {
+    public function __construct()
+    {
+       $this->middleware(['auth', 'verified']);
+    }
     // invoice list App
     public function invoice_list()
     {

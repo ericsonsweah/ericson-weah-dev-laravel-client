@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
 
+    public function __construct()
+    {
+       $this->middleware(['auth', 'verified']);
+    }
     // Account Settings account
     public function account_settings_account()
     {

@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class ExtensionController extends Controller
 {
+    public function __construct()
+    {
+       $this->middleware(['auth', 'verified']);
+    }
     // Sweet Alert
     public function sweet_alert()
     {

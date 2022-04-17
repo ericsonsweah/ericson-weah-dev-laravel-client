@@ -34,33 +34,33 @@ return [
     */
 
     'mailers' => [
-        // 'smtp' => [
-        //     'transport' => 'smtp',
-        //     'host' => env('MAIL_HOST'),
-        //     'port' => env('MAIL_PORT'),
-        //     'encryption' => env('MAIL_ENCRYPTION'),
-        //     'username' => env('MAILGUN_USERNAME'),
-        //     'password' => env('MAILGUN_PASSWORD'),
-        //     'domain' => env('MAILGUN_DOMAIN'),
-        //     'secret' => env('MAILGUN_SECRET'),
-        //     'timeout' => null,
-        //     'auth_mode' => null,
-        // ],
-        // 'mailgun' => [
-        //     'transport' => 'mailgun',
-        //     'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-        //     'port' => env('MAIL_PORT', 587),
+        'smtp' => [
+            'transport' => 'smtp',
+            'host' => env('MAIL_HOST'),
+            'port' => env('MAIL_PORT'),
+            'encryption' => env('MAIL_ENCRYPTION'),
+            'username' => env('MAIL_USERNAME'),
+            'password' => env('MAIL_PASSWORD'),
+            'domain' => env('MAILGUN_DOMAIN'),
+            'secret' => env('MAILGUN_SECRET'),
+            'timeout' => null,
+            'auth_mode' => null,
+        ],
+        'mailgun' => [
+            'transport' => 'mailgun',
+            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+            'port' => env('MAIL_PORT', 587),
 
-        //     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-        //     'username' => env('MAILGUN_USERNAME'),
-        //     'password' => env('MAILGUN_PASSWORD'),
+            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'username' => env('MAIL_USERNAME'),
+            'password' => env('MAIL_PASSWORD'),
 
-        //     'domain' => env('MAILGUN_DOMAIN'),
-        //     'secret' => env('MAILGUN_SECRET'),
-        //     'timeout' => null,
-        //     'auth_mode' => null,
+            'domain' => env('MAILGUN_DOMAIN'),
+            'secret' => env('MAILGUN_SECRET'),
+            'timeout' => null,
+            'auth_mode' => null,
 
-        // ],
+        ],
         'smtp' => [
             'transport' => 'smtp',
             'host' => env('MAIL_HOST', 'smtp.mailgun.org'),

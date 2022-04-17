@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class ComponentsController extends Controller
 {
+    public function __construct()
+    {
+       $this->middleware(['auth', 'verified']);
+    }
     // Component accordion
     public function accordion()
     {

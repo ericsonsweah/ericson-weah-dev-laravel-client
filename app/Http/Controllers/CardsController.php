@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class CardsController extends Controller
 {
+    public function __construct()
+    {
+       $this->middleware(['auth', 'verified']);
+    }
   // Card Basic
   public function card_basic()
   {

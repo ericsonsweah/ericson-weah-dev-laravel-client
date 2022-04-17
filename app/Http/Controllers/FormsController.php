@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class FormsController extends Controller
 {
+    public function __construct()
+    {
+       $this->middleware(['auth', 'verified']);
+    }
     // Form Elements - Input
     public function input()
     {
